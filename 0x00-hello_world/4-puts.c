@@ -1,4 +1,4 @@
-#includ <stdio>
+#include <stdio>
 /**
  * main- Entry point
  *

@@ -1,7 +1,5 @@
 #include <stdio.h>
-
 #include <stdlib.h>
-
 #include <time.h>
 
 /**
@@ -32,12 +30,12 @@ int main(void)
 
 					putchar(',');
 					putchar(' ');
-
 				}
 			}
 		}
 	}
 	putchar('\n');
+
 	return (0);
 
 }

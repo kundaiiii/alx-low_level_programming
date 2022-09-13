@@ -22,7 +22,7 @@ int main(void)
 	{
 		if (y < 4000000 && (y % 2) == 0)
 		{
-			sum = sum + j;
+			sum = sum + y;
 		}
 		next = y + z;
 

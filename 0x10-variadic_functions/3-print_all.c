@@ -2,15 +2,12 @@
 #include <stdarg.h>
 #include <stdlib.h>
 #include <stdio.h>
-
 /**
  * print_all - A function prints anyting.
  * @format: A list of type of arguments passed to the function.
  * Return: Nothing
  **/
-
 void print_all(const char * const format, ...)
-
 {
 	va_list ap;
 
@@ -23,8 +20,7 @@ void print_all(const char * const format, ...)
 	{
 		printf("\n");
 		return;
-	}
-	while (format[i])
+	} while (format[i])
 	{
 		switch (format[i])
 		{
@@ -43,15 +39,13 @@ void print_all(const char * const format, ...)
 				{
 					printf("%s", temp);
 					break;
-				}
-				printf("(nil)");
+				} printf("(nil)");
 				break;
 		}
 		if ((format[i] == 'c' || format[i] == 'i' || format[i] == 'f' ||
 					format[i] == 's') && format[(i + 1)] != '\0')
 			printf(", ");
 		i++;
-	}
-	va_end(ap);
+	} va_end(ap);
 	printf("\n");
 }

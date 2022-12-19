@@ -5,10 +5,9 @@
  * by a new line, to stdout.
  * @str: an input string
  * Return: Nothing
- **/
+ */
 
 void _puts(char *str)
-
 {
 	int i = 0;
 

@@ -6,28 +6,30 @@
  * @src: an input string
  * @n: an input integer
  * Return: A pointer to the resulting string
- **/
+ */
 
 char *_strncat(char *dest, char *src, int n)
-
 {
-	int srclen = 0, i = 0;
-
-	char *temp = dest, *start = src;
+	int src_n = 0, i = 0;
+	char *end = dest, *start = src;
 
 	while (*src)
 	{
-		srclen++;
+		src_n++;
 		src++;
 	}
+
 	while (*dest)
 		dest++;
-	if (n > srclen)
-		n = srclen;
+
+	if (n > src_n)
+		n = src_n;
+
 	src = start;
 
 	for (; i < n; i++)
 		*dest++ = *src++;
+
 	*dest = '\0';
-	return (temp);
+	return (end);
 }
